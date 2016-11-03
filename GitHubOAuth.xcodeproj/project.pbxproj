@@ -21,7 +21,7 @@
 		5D2658CE1DBEE9A20012A702 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2658CD1DBEE9A20012A702 /* RepositoryTableViewCell.swift */; };
 		5D2658D11DBEE9D20012A702 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2658CF1DBEE9D20012A702 /* Repository.swift */; };
 		5D2658D21DBEE9D20012A702 /* RepositoryDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2658D01DBEE9D20012A702 /* RepositoryDataStore.swift */; };
-		5D2658F31DC3814A0012A702 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2658F21DC3814A0012A702 /* Secrets.swift */; };
+		BB9AB1071DCB8310002FED93 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AB1061DCB8310002FED93 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,9 @@
 		5D2658CF1DBEE9D20012A702 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		5D2658D01DBEE9D20012A702 /* RepositoryDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryDataStore.swift; sourceTree = "<group>"; };
 		5D2658F11DC28D0E0012A702 /* GitHubOAuth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitHubOAuth.entitlements; sourceTree = "<group>"; };
-		5D2658F21DC3814A0012A702 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		884A00365D992E58B2226BF9 /* Pods_GitHubOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3E6B2A17527E9B50ECA724 /* Pods-GitHubOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubOAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubOAuth/Pods-GitHubOAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		BB9AB1061DCB8310002FED93 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		C1E857D16CDEBAE02D2A0099 /* Pods-GitHubOAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubOAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubOAuth/Pods-GitHubOAuth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +143,7 @@
 			children = (
 				5D2658BC1DBEE5810012A702 /* Constants.swift */,
 				5D2658C51DBEE8D00012A702 /* Extensions.swift */,
-				5D2658F21DC3814A0012A702 /* Secrets.swift */,
+				BB9AB1061DCB8310002FED93 /* Secrets.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Flatiron School";
 				TargetAttributes = {
 					5D2658A11DBEB00E0012A702 = {
@@ -295,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D2658CB1DBEE9950012A702 /* LoginViewController.swift in Sources */,
-				5D2658F31DC3814A0012A702 /* Secrets.swift in Sources */,
 				5D2658CC1DBEE9950012A702 /* RepositoryTableViewController.swift in Sources */,
 				5D2658C61DBEE8D00012A702 /* Extensions.swift in Sources */,
 				5D2658BD1DBEE5810012A702 /* Constants.swift in Sources */,
@@ -305,6 +304,7 @@
 				5D2658D21DBEE9D20012A702 /* RepositoryDataStore.swift in Sources */,
 				5D2658CA1DBEE9950012A702 /* AppController.swift in Sources */,
 				5D2658CE1DBEE9A20012A702 /* RepositoryTableViewCell.swift in Sources */,
+				BB9AB1071DCB8310002FED93 /* Secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +340,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -389,6 +390,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -417,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB3E6B2A17527E9B50ECA724 /* Pods-GitHubOAuth.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GitHubOAuth/GitHubOAuth.entitlements;
 				DEVELOPMENT_TEAM = KXY9EDFTF5;
@@ -432,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1E857D16CDEBAE02D2A0099 /* Pods-GitHubOAuth.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GitHubOAuth/GitHubOAuth.entitlements;
 				DEVELOPMENT_TEAM = KXY9EDFTF5;

@@ -17,6 +17,7 @@ class RepositoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("TableView is being executed")
         self.title = "Repositories"
         
         store.getRepositories { error in
